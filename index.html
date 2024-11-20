@@ -57,6 +57,33 @@
             background-color: beige;
             padding: 32px;*/
         }
+        body{
+            height: 100vh;
+        }
+        .flex-container{
+/*            height: 100;*/
+            display: flex;
+            background-color: plum;
+/*ใช้ flex-flow แทนได้
+            flex-wrap: wrap;
+            flex-direction: row;
+*/
+            flex-flow: row wrap;
+            gap: 8px;
+            text-align: center;
+/*            justify-content: center;*/
+/*            align-items: center;*/
+        }
+        .flex-item{
+            padding: 16px;
+            background-color: pink;
+            border: 1px solid red;
+            padding: 8px 32px;
+/*            min-width: 100px;*/
+        }
+        .feature{
+            order: -1;
+        }
     </style>
 </head>
 <body>
@@ -76,22 +103,51 @@
         <div class="item">1</div>
     </div>
 -->
+<!--
     <div class="container">
         <div class="item header">
             <div>
                 <p>logo</p>
             </div>
             <div>
-                search
+                <input type="text" name="fname" id="fname" placeholder="Name">
             </div>
             <div>
                 profile
             </div>
         </div>
-        <div class="item menu">menu</div>
+        <div class="item menu"></div>
         <div class="item main">main</div>
         <div class="item right">right</div>
         <div class="item footer">footer</div>
+    </div>
+-->
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="Kuromi.jpg" alt="" wide="100" height="100">
+            <p>product 1</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="flex-item">
+            <img src="Kuromi.jpg" alt="" wide="100" height="100">
+            <p>product 2</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="flex-item">
+            <img src="Kuromi.jpg" alt="" wide="100" height="100">
+            <p>product 3</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="flex-item feature">
+            <img src="Kuromi.jpg" alt="" wide="100" height="100">
+            <p>feature product</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="flex-item">
+            <img src="Kuromi.jpg" alt="" wide="100" height="100">
+            <p>product 4</p>
+            <button>Buy Now</button>
+        </div>
     </div>
 </body>
 </html>
