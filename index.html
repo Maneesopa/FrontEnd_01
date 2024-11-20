@@ -1,2 +1,97 @@
-<h1>Hi!!!</h1>
-<h2>Hello</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+        .container{
+            display: grid;
+            grid-template-columns: 100px auto auto auto 80px auto;
+            grid-template-rows: 100px 100px 100px;
+            gap: 16px 32px;
+            background-color: pink;
+            justify-content: center;
+        }
+        .item, .item-special {
+            background-color: bisque;
+            padding: 32px;
+        }
+        .item-special{
+            grid-column: 1/ span 3;
+            grid-row: 2/ span 2;
+            grid-area: 1 / 2 / span 4 / span 4;
+        }
+*/
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+/*            grid-template-columns: auto auto auto;
+            column-gap: 32px;
+            row-gap: 16px;
+            background-color: pink;
+            grid-template-areas: 
+            "header header header"
+            "menu main right"
+            "menu footer footer";
+        }
+        .header{
+            grid-area: header;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .menu{
+            grid-area: menu;
+        }
+        .main{
+            grid-area: main;
+        }
+        .right{
+            grid-area: right;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .item{
+            background-color: beige;
+            padding: 32px;*/
+        }
+    </style>
+</head>
+<body>
+<!--    <div class="container">
+        <div class="item-special">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">1</div>
+    </div>
+-->
+    <div class="container">
+        <div class="item header">
+            <div>
+                <p>logo</p>
+            </div>
+            <div>
+                search
+            </div>
+            <div>
+                profile
+            </div>
+        </div>
+        <div class="item menu">menu</div>
+        <div class="item main">main</div>
+        <div class="item right">right</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+</html>
